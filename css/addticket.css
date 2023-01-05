@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --transition: all 0.7s ease;
+    --transition1: all 0.9s ease;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    padding: 0px 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr .HR {
+    margin-top: -30px !important;
+}
+
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), 
+              url("https://t3.ftcdn.net/jpg/02/55/67/62/360_F_255676210_fiOrmx7LosKnQrtNrWPllUrunUkqTuCy.jpg") 
+              center/cover no-repeat;
+    min-height: 50vh !important;
+    color: #fff;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.top {
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+}
+
+.top  .top-left {
+    display: flex;
+    align-items: center;
+}
+
+.top .top-left h1 a {
+    cursor: pointer;
+    transition: var(--transition);
+    color:black;
+    font-size: 35px;
+    margin-left: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top h1 a:hover {
+    color: red;
+}
+
+.top .top-right {
+    display: flex;
+    float: right !important;
+    margin-left: 720px;
+}
+
+.top .top-right a {
+    float: right;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500 !important;
+    margin-left: 10px;
+    float: right !important;
+    background : tomato;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.left-right {
+   display: flex;
+   width: 100%;
+   justify-content: flex-end;
+   gap: 40px;
+}
+
+.left-right .note {
+    text-align: center;
+    border: solid rgb(255, 0, 119);
+    padding: 5px;
+    border-radius: 20px;
+    color: red;
+}
+
+h4 .blink {
+    animation:blinker 1.2s infinite;
+}
+
+@keyframes blinker {
+    0%  {   color : solid rgb(255, 0, 0);   }
+    49% {   color: rgb(221, 96, 96); }
+    60% {   color: rgb(222, 79, 79); }
+    80% {   color:rgb(204, 129, 129); }
+    100%{   color: rgb(224, 170, 170); }
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.header .header-inner {
+    width: 500px;
+    float: right !important;
+    margin-left: 800px;
+}
+
+
+.footer {
+    background-color: #c7c8c9;
+    border-top: 1px solid #ecf0f1;
+    padding: 2rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    color: #000000;
+    justify-content: flex-start;
+}
+
+.footer p ion-icon {
+    color: red;
+    padding-right: 4px;
+}

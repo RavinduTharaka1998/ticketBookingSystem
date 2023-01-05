@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --transition: all 0.7s ease;
+    --transition1: all 0.9s ease;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), 
+    url("https://previews.123rf.com/images/davidfranklinstudioworks/davidfranklinstudioworks1610/davidfranklinstudioworks161000042/65112593-two-blue-movie-or-raffle-tickets-isolated-on-a-white-background-.jpg") 
+    center/cover no-repeat;
+    min-height: 70vh;
+    color: #fff;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+}
+
+.top  a {
+    display: flex;
+    align-items: center;
+}
+
+.top h1 {
+    cursor: pointer;
+    transition: var(--transition);
+    color:black;
+    font-size: 35px;
+    margin-left: 8px;
+}
+
+.top h1:hover {
+    color: red;
+}
+
+.top .top-right {
+    display: flex;
+    float: right !important;
+    margin-left: 920px;
+}
+
+.top .top-right a {
+    float: right;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+    float: right !important;
+    background : tomato;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.view-table {
+    width: 1400px;
+    margin-top: 90px !important;
+    display: table;
+    margin: 0 auto;
+    background-color: #000000;
+    opacity: 0.8;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+table {
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px !important;
+}
+
+table th {
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}  
+
+table th, td {
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+table tr td:hover {
+    border: solid #fff !important;
+    padding: 3px 17px !important;
+}
+
+table td .update, .delete {
+    font-size: 15px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+table td .update {
+    background-color: greenyellow;
+}
+
+table td .delete {
+    background-color: red;
+}
+
+table td .update:hover, .delete:hover {
+    padding: 5px 10px;
+}
+
+.footer {
+    background-color: #eef1f5;
+    border-top: 1px solid #ecf0f1;
+    padding: 2rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.footer p {
+    color: #000000;
+    justify-content: flex-start;
+}
+
+.footer p ion-icon {
+    color: red;
+    padding-right: 4px;
+}
+
+.image-list {
+    display: flex;
+    margin-top: 20px;
+    background-color: #000000;
+    opacity: 0.8;
+}
+
+.left-right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 40px;
+    margin-top: 10px;
+ }
+ 
+ .left-right .note {
+     text-align: center;
+     border: solid rgb(255, 0, 119);
+     padding: 5px;
+     border-radius: 20px;
+     color: red;
+ }
+ 
+ h4 .blink {
+     animation:blinker 1.2s infinite;
+ }
+ 
+ @keyframes blinker {
+     0%  {   color : solid rgb(255, 0, 0);   }
+     49% {   color: rgb(221, 96, 96); }
+     60% {   color: rgb(222, 79, 79); }
+     80% {   color:rgb(204, 129, 129); }
+     100%{   color: rgb(224, 170, 170); }
+ }
+ 
+ .profile {
+     display: flex;
+     align-items: center;
+     font-size: 20px;
+     float: right;
+     margin-bottom: 20px;
+ }
